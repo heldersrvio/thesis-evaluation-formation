@@ -11,7 +11,8 @@
   },
   "devDependencies": {
     "aws-cdk": "2.4.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "prettier": "2.5.1"
   },
   "dependencies": {
     "aws-cdk-lib": "2.4.0",
