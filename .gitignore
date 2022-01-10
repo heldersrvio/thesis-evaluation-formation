@@ -4,4 +4,4 @@ node_modules
 .cdk.staging
 cdk.out
 
-lib
+build

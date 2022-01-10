@@ -1,23 +1,26 @@
 {
-  "name": "thesis-evaluation-formation",
-  "version": "0.1.0",
-  "bin": {
-    "thesis-evaluation-formation": "bin/thesis-evaluation-formation.js"
-  },
-  "scripts": {
-    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
-    "compile": "coffee --compile --output lib/ src/",
-    "synth": "npm run compile && cdk synth",
-    "deploy": "npm run compile && cdk deploy",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "aws-cdk": "2.4.0",
-    "jest": "^26.4.2",
-    "prettier": "2.5.1"
-  },
-  "dependencies": {
-    "aws-cdk-lib": "2.4.0",
-    "constructs": "^10.0.0"
-  }
+	"name": "thesis-evaluation-formation",
+	"version": "0.1.0",
+	"bin": {
+		"thesis-evaluation-formation": "bin/thesis-evaluation-formation.js"
+	},
+	"scripts": {
+		"build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+		"compile": "coffee --compile --output build/lib/ src/lib/ && coffee --compile --output build/bin/ src/bin/",
+		"synth": "npm run compile && cdk synth",
+		"prettify": "npx prettier --write .",
+		"deploy": "npm run compile && cdk deploy",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"aws-cdk": "2.4.0",
+		"coffeescript": "^2.6.1",
+		"jest": "^26.4.2",
+		"prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
+		"prettier-plugin-coffeescript": "^0.1.5"
+	},
+	"dependencies": {
+		"aws-cdk-lib": "2.4.0",
+		"constructs": "^10.0.0"
+	}
 }
