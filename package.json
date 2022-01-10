@@ -5,6 +5,8 @@
 		"thesis-evaluation-formation": "bin/thesis-evaluation-formation.js"
 	},
 	"scripts": {
+		"dev": "export NODE_ENV=dev",
+		"prod": "export NODE_ENV=prod",
 		"build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
 		"compile": "coffee --compile --output build/lib/ src/lib/ && coffee --compile --output build/bin/ src/bin/",
 		"synth": "npm run compile && cdk synth",
@@ -21,6 +23,8 @@
 	},
 	"dependencies": {
 		"aws-cdk-lib": "2.4.0",
-		"constructs": "^10.0.0"
+		"constructs": "^10.0.0",
+		"custom-env": "^2.0.1",
+		"dotenv": "^10.0.0"
 	}
 }

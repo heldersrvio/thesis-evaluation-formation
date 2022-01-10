@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+require('custom-env').env true
 cdk = require 'aws-cdk-lib'
 {
 	ThesisEvaluationFormationStack

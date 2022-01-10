@@ -9,10 +9,10 @@
 codepipeline = require 'aws-cdk-lib/aws-codepipeline'
 s3 = require 'aws-cdk-lib/aws-s3'
 
-oauthToken = 'TOKEN'
-owner = 'owner'
-repo = 'kMeans-labeling-discretization'
-defaultBranch = 'master'
+oauthToken = process.env['GITHUB_OAUTH_TOKEN']
+owner = process.env['GITHUB_USER_NAME']
+repo = process.env['MAIN_REPOSITORY_NAME']
+defaultBranch = process.env['DEFAULT_BRANCH']
 buildImage = LinuxBuildImage.STANDARD_5_0
 
 class Main extends Construct
