@@ -6,7 +6,9 @@
   },
   "scripts": {
     "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
-    "cdk": "cdk",
+    "compile": "coffee --compile --output lib/ src/",
+    "synth": "npm run compile && cdk synth",
+    "deploy": "npm run compile && cdk deploy",
     "test": "jest"
   },
   "devDependencies": {
