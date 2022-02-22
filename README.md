@@ -1,12 +1,5 @@
-# Welcome to your CDK JavaScript project!
+# Thesis Evaluation Formation
 
-This is a blank project for JavaScript development with CDK.
+An Amazon CDK project which aims to provide an infrastructure upon which [my thesis](https://github.com/heldersrvio/kmeans-labeling-discretization)' progress can be tracked and evluated, as well as evaluate the performance of the back-end services inside the infrastructure.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app. The build step is not required when using JavaScript.
-
-## Useful commands
-
-- `npm run test` perform the jest unit tests
-- `cdk deploy` deploy this stack to your default AWS account/region
-- `cdk diff` compare deployed stack with current state
-- `cdk synth` emits the synthesized CloudFormation template
+Work in progress.
