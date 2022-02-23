@@ -48,7 +48,7 @@ class Main extends Construct
 					buildSpec: BuildSpec.fromSourceFilename testBuildSpec
 					project: new PipelineProject @, 'TestProject',
 						environment: buildImage: buildImage
-					outputs: testArtifact
+					outputs: [testArtifact]
 			]
 		deployStage =
 			stageName: 'Deploy'
